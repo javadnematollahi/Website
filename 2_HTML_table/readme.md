@@ -12,17 +12,17 @@ textarea
 
 input with different type:
 
-     text, 
+   *  text
      
-     color, 
+   *  color
      
-     email, 
+  *   email
      
-     password, 
+   *  password
      
-     number, 
+   *  number
      
-     date,
+ *    date
      
-     submit
+*    submit
      
