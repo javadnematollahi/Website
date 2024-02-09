@@ -30,3 +30,7 @@ And I use javascript to creat add captcha to a form
 use below link to make your icon for your website
 
 https://www.favicon.cc/
+
+Result:
+
+![output](https://github.com/javadnematollahi/Website/assets/86910174/44a44764-2ed7-469c-976f-82bece8e75f8)
