@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>وبلاگ من</title>
+        <link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .captcha-container {
+              text-align: center;
+            }
+            #captcha {
+              font-size: 24px;
+              margin-bottom: 10px;
+            }
+            .right-align {
+                text-align: right;
+                list-style-position: inside; /* Move numbers inside the list items */
+            }
+            /* Align list items to the left */
+            .left-align {
+                text-align: left;
+                list-style-position: inside; /* Move numbers inside the list items */
+            }
+            input.placeholder-right::placeholder {
+                text-align: right;
+            }
+            #specificInput {
+                width: calc(100% - 0px); /* Adjust width to accommodate padding */
+                height: 100%; /* Make input height same as cell height */
+                box-sizing: border-box; /* Ensure padding and border are included in the width */
+            }
+            .fixed-layout {
+                table-layout: fixed;
+            }
+            .fixed-layout th,
+            .fixed-layout td {
+                border: 2px solid rgb(107, 105, 105);
+            }
+        </style>
+    </head>
+    <body onload="generate()">
+        <table border="2px" width="1650" class="fixed-layout">
+            <tr  class="right-align">
+                <td><input type="submit" value="جستجو"></td>
+                <td><input type="text" placeholder="search" class="placeholder-right"  id="specificInput"></td>
+                <td><a href=""><u style="color: blue;">تماس با من</u><i class="fa fa-phone"></i></a></td>
+                <td><a href=""><u style="color: blue;">درباره من</u></a>🙍‍♂️</td>
+                <td><a href=""><u style="color: blue;">دانلودها</u></a>⬇️</td>
+                <td><a href=""><u style="color: blue;">پروژه ها</u></a>📚</td>
+                <td><a href=""><u style="color: blue;">خانه</u></a>🏠</td>
+                <td><b>وبلاگ من</b></td>
+            </tr>
+        </table><br>
+
+        <table border="2px">
+            <tr>
+                <td><p align="center" style="font-size: 30px;"><b>ویدیو 📽️</b></p><br><video  width="540" height="280" src="assets\chavoshi.mp4" controls width="520" height="315"></video></td>
+                <td><p align="center" style="font-size: 30px;">Youtube</p><br><iframe width="540" height="280" src="https://www.youtube.com/embed/XQG89cwhmJU?si=VX_WuTZpfNyGNqFt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+                <td><p align="center" style="font-size: 30px;">آپارات</p><br><iframe width="540" height="280" src="https://www.aparat.com/video/video/embed/videohash/RKqXs/vt/frame"  allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <FORM align="right">
+                        <br><br>
+                        <label><b>نام کاربری</b></label><br>
+                        <input type="text"><br><br>
+                        <label><b>گذرواژه</b> </label><br>
+                        <input type="text"><br><br>
+                        <label><b>تصویر امنیتی</b></label><br>
+                        <div id="captcha" onclick="generateCaptcha()"></div>
+                        <input type="text" id="entered-captcha"><br><br>
+                        <button onclick="validateCaptcha()">ورود</button><br><br>
+                    </FORM>
+                </td>
+                <td>
+                    <table border="2px" width="540" height="700">
+                        <tr> 
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9820;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9822;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9821;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9818;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9819;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9821;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9822;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9820;</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9823;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9823;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9823;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9823;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9823;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9823;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9823;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9823;</td>
+                        </tr>
+                        <tr> 
+                            <td style="background-color: darkgray;" height="90"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                            <td style="background-color: darkgray;"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                            <td style="background-color: darkgray;"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                            <td style="background-color: darkgray;"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(255, 255, 255);"height="90"></td>
+                            <td style="background-color: darkgray;"></td>
+                            <td colspan="4" rowspan="2" height="180"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d25723.441545202473!2d59.543620206905615!3d36.30187338546138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1707500540878!5m2!1sen!2sde" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                            <td style="background-color: darkgray;"></td>
+                        </tr>
+                        <tr> 
+                            <td style="background-color: darkgray;"height="90"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                            <td style="background-color: darkgray;"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(255, 255, 255);" height="90"></td>
+                            <td style="background-color: darkgray;"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                            <td style="background-color: darkgray;"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                            <td style="background-color: darkgray;"></td>
+                            <td style="background-color: rgb(255, 255, 255);"></td>
+                            <td style="background-color: darkgray;"></td>
+                        </tr>
+                        <tr> 
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9817;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9817;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9817;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9817;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9817;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9817;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9817;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9817;</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9814;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9816;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9815;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9812;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9813;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9815;</td>
+                            <td style="background-color: rgb(255, 255, 255); text-align: right; font-size: xx-large;">&#9816;</td>
+                            <td style="background-color: darkgray; text-align: right; font-size: xx-large;">&#9814;</td>
+                        </tr>
+                    </table>
+
+                </td>
+                <td>
+                    <ol class="right-align">
+                        <li><audio src="assets\1.mp3" controls></audio></li>
+                        <li><audio src="assets\2.mp3" controls></audio></li>
+                        <li><audio src="assets\3.mp3" controls></audio></li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            function generateCaptcha() {
+              var captcha = '';
+              var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+              for (var i = 0; i < 6; i++) {
+                captcha += characters.charAt(Math.floor(Math.random() * characters.length));
+              }
+              document.getElementById('captcha').innerHTML = captcha;
+            }
+            
+            function validateCaptcha() {
+              var userInput = document.getElementById('captchaInput').value.trim();
+              var captcha = document.getElementById('captcha').innerHTML.trim();
+              
+              if (userInput === captcha) {
+                document.getElementById('captchaResult').innerHTML = 'Captcha matched! You are human.';
+              } else {
+                document.getElementById('captchaResult').innerHTML = 'Captcha does not match. Please try again.';
+              }
+            }
+            generateCaptcha(); // Generate captcha on page load
+            </script>
+
+    </body>
+</html>
