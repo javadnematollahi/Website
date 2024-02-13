@@ -1,0 +1,309 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+   <style>
+    .tot{
+        width: 100%;
+        height: 100%; 
+    }
+    .gradient {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #D43E90, #0B4DB7);
+        /* Replace #ff7e5f and #feb47b with your desired colors */
+    }
+    #divsefid{
+        /* border-style: solid; */
+        width: 400px;
+        height: 75%;
+        /* position: relative;
+        top: 10%;
+        right: auto;
+        left: auto;  */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* transform: translate(-50%, 10%); */
+        background-color: white;
+    }
+    #login{
+        /* border-style: solid; */
+        position: relative;
+        /* right: 50%; */
+        opacity: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 20%;
+        width: 130px;
+        height: 60px;
+        font-size: 45px;
+        font-weight: 400px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .forms{
+        position: relative;
+        top: 21%;
+        left: 1%;
+        /* border-style: solid; */
+        width: 100%;
+        height: 50%;
+    }
+    .user{
+        /* border-style: solid; */
+        width: 300px;
+        position: relative;
+        transform: translate(15%, 0%);
+        height: 15%;
+        background-color: rgb(232, 230, 233);
+        border: none;
+        outline: none;
+    }
+    #usr{
+        /* border-style: solid; */
+        position: relative;
+        left: 1%;
+        transform: translate(7%, 0%);
+        height: 100%;
+        width: 85%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border:none;
+        outline:none;
+        background-color: rgb(232, 230, 233);
+
+    }
+    #env{
+        width: 20px;
+        transform: translate(50%, 30%);
+        opacity: 60%;
+    }
+    .passwor{
+        /* border-style: solid; */
+        width: 300px;
+        position: relative;
+        transform: translate(15%, 30%);
+        height: 15%;
+        background-color: rgb(232, 230, 233);
+        border: none;
+        outline: none;
+    }
+    #pass{
+        position: relative;
+        left: 1%;
+        transform: translate(7%, 0%);
+        height: 100%;
+        width: 85%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border:none;
+        outline:none;
+        background-color: rgb(232, 230, 233);
+    }
+    #locks{
+        width: 20px;
+        transform: translate(50%, 30%);
+        opacity: 60%;
+    }
+    .rem{
+        /* border-style: solid; */
+        position: relative;
+        transform: translate(29%, 160%);
+        width: 150px;
+    }
+    #ch{
+        display: none;
+    }
+    .remtext {
+    display: inline-block;
+    font-family:sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    position: relative;
+    transform: translate(1%, 2%);
+    padding-left: 20px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+    }
+    /* Create custom checkbox design */
+    .remtext::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 1;
+        width: 9px;
+        height: 9px;
+        border: 2px solid #C43879; /* Border color */
+        border-radius: 3px;
+        background-color: #fff; /* Checkbox background color */
+    }
+
+    /* Style the custom checkbox when checked */
+    .remtext::after {
+        content: ''; /* Checkmark character */
+        position: absolute;
+        left: 5px;
+        top: 2px;
+        font-size: 8px;
+        width: 2px;
+        height: 7px;
+        border: solid #C43879; /* Checkmark color */
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        visibility: hidden;
+    }
+    /* Show the checkmark when the checkbox is checked */
+    #ch:checked + .remtext::after {
+        visibility: visible;
+    }
+    /* #remtext{
+        position: relative;
+        transform: translate(5%, 5%);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        opacity: 50%;
+        font-weight: 100;
+    } */
+    .sublog{
+        /* border-style: solid; */
+        width: 300px;
+        position: relative;
+        transform: translate(15%, 90%);
+        height: 15%;
+        border: none;
+        outline: none;
+    }
+    #enter{
+        height: 100%;
+        width: 100%;
+        background-color: #D53E8F;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+    .orlog{
+        /* border-style: solid; */
+        position: relative;
+        transform: translate(0%, 380%);
+        border: none;
+        outline: none;
+    }
+    #orgl{
+        position: relative;
+        transform: translate(37%, 0%); 
+        opacity: 40%;  
+        font-size: 15px;
+
+    }
+    #buttons{
+        /* border-style: solid; */
+        width: 300px;
+        height: 30px;
+        position: relative;
+        transform: translate(15%, 230%);
+    }
+    #facbu{
+        /* border-style: solid; */
+        width: 45%;
+        position: relative;
+        transform: translate(0%, 0%);
+        height: 100%;
+    }
+    #golbu{
+        /* border-style: solid; */
+        width: 45%;
+        position: relative;
+        transform: translate(20%, -16%);
+        height: 100%;
+    }
+    #fac{
+        /* border-style: solid; */
+        width: 20px;
+        position: relative;
+        transform: translate(-160%, 6%);
+    }
+    #gol{
+        /* border-style: solid; */
+        position: relative;
+        transform: translate(-160%, 25%);
+        width: 15px;
+    }
+    #gotext{
+        /* border-style: solid; */
+        width: 55%;
+        position: relative;
+        transform: translate(58%, -70%);
+        color: #555555;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+    #fatext{
+        /* border-style: solid; */
+        width: 55%;
+        position: relative;
+        transform: translate(58%, -110%);
+        color: #6E7A9E;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+    .signup{
+        position: relative;
+        transform: translate(29%, 950%);
+        font-family:sans-serif;
+        font-size: smaller;
+        color: #AFAFAF;
+    }
+    .snow{
+        text-underline-offset: 3px;
+        color: #AFAFAF;
+    }
+   </style>
+</head>
+<body class="tot">
+    <div class="gradient">
+        <div id="divsefid">
+            <div id="login">
+                LOGIN
+            </div>
+            <div class="forms">
+                <form>
+                    <div  class="user">
+                        <img src="assets/envelop.png" id="env">
+                        <input type="text" id="usr" placeholder="Email">
+                    </div>
+                    <div class="passwor">
+                        <img src="assets/lock.png" id="locks">
+                        <input type="password" id="pass" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                    </div>  
+                    <div class="rem">
+                        <input type="checkbox" id="ch" checked>
+                        <label for="ch" class="remtext">Remember me</label>
+                    </div>
+                    <div class="sublog">
+                        <input id="enter" type="submit" value="LOGIN">
+                    </div>
+                    <div class="orlog">
+                        <p id="orgl">Or login with</p>
+                    </div>
+                    <div id="buttons">
+                            <button id="facbu">
+                                <img src="assets/facebook.png" id="fac">
+                                <div id="fatext">Facebook</div> 
+                            </button>
+ 
+                            <button id="golbu">
+                                <img src="assets/google-logo.png" id="gol">
+                                <div id="gotext">Google</div>
+                            </button>
+                    </div>
+                    <div class="signup">
+                        <p>Not a member?<a href="" class="snow">Sign up now</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

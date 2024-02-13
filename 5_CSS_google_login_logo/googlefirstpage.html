@@ -1,0 +1,277 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google</title>
+<style>
+    .googleimage{
+       position: relative;
+       left: 50%; 
+       right: 50%;
+       top: 25%;
+       width: 270px;
+       height: 90px;
+       transform: translate(-50%, -50%);
+       /* margin-left: 50%;
+       margin-right: 50%; */
+    }
+    .divgoogle{
+        width: 100%;
+        position: relative;
+        top: 25%;
+    }
+
+
+    .divbase{
+        position: relative;
+        left: 0.5%;
+        width: 99%;
+        height: 99%;
+        background-color: white;
+    }
+    .divup{
+        width: 100%;
+        height: 10%;
+        position: relative;
+        top: 0px;
+    }
+    .divgooglebutton{
+        position: relative;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* bottom: 0px; */
+        width: 380;
+        height: 40px;
+        /* border-style: solid; */
+    }
+    .dots{
+        position: absolute;
+        right:100px;
+        top: 12%;
+        width: 25px;
+        height: 25px;
+        opacity: 50%;
+        background-image: url('assets/dots_nine.png'); /* Set the image URL */
+        background-size: cover; 
+        border: none; 
+        cursor: pointer;
+    }
+    .gmail{
+        position: absolute;
+        right:210px;
+        top: 16%;
+        color: black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    
+    .images{
+        position: absolute;
+        right:150px;
+        top: 16%;
+        color: black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    .signin{
+        position: absolute;
+        right: 1px;
+        width: 80;
+        height: 40px;
+        opacity: 100%;
+        background-color: rgb(56, 120, 240); /* Set the image URL */
+        cursor: pointer;
+        border: none; /* Remove default button border */
+        border-radius: 7px;
+    }
+    .signintext{
+        position: relative;
+        left: -22%;
+        top: -5%;
+        color: azure;
+        width: 100px;
+        height: 45px;
+        opacity: 100%;
+        background-size: cover; /* Cover the entire button with the image */
+        border: none; /* Remove default button border */
+        
+    }
+    .divinput{
+        width: 100%;
+        position: relative;
+        top: 26%;
+        right: 0%;
+    }
+    .divinputbig{
+        position:relative;
+        right: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        width: 560px;
+        height: 47;
+        border-style: solid;
+        border-color: rgb(216, 212, 212);
+        border-radius: 30px;
+        border-width: 1px;
+        /* background-color: rgba(255, 255, 255, 0.2); */
+        /* opacity: 30%; */
+    }
+    .input{
+        position:relative;
+        top: -27%;
+        left:5%;
+        width: 460px;
+        height: 45px;
+        opacity: 100%;
+        font-size: x-large;
+        font-style: normal;
+        border: none;
+        outline: none;
+        /* border-style: solid;  */
+        /* border-color: white;
+        /* border-radius: 30px; */
+        /* border-width: 1px; */
+    }
+    .michrophone{
+        position: relative;
+        left: 4%;
+        top: 3%;
+        width: 45px;
+        height: 45px;
+        opacity: 100%;
+        background-color: white;
+        border-radius: 20px;
+        background-image: url('assets/mic_icon.png'); /* Set the image URL */
+        background-size: cover; /* Cover the entire button with the image */
+        border: none; /* Remove default button border */
+        cursor: pointer;
+    }
+    .search{
+        position: relative;
+        left: 12px;
+        top: -19px;
+        width: 20;
+        height: 20;
+        opacity: 30%;
+        background-image: url('assets/search_icon.png'); /* Set the image URL */
+        background-size: cover; /* Cover the entire button with the image */
+        border: none; /* Remove default button border */
+        cursor: pointer; /* Show pointer cursor on hover */
+    }
+    .divdown{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 40px;
+        /* border-style: solid; */
+    }
+
+    #gs{
+        position: relative;
+        left: 10%;
+        right: 65%;
+        transform: translate(-65%, -35%);
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #ifl{
+        position: relative;
+        left: 30%;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #about{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        color: gray;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #adv{
+        position: absolute;
+        bottom: 0%;
+        left: 54px;
+        color: gray;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #bus{
+        position: absolute;
+        bottom: 0%;
+        left: 140px;
+        color: gray;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #hsw{
+        position: absolute;
+        bottom: 0%;
+        left: 215px;
+        color: gray;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #privacy{
+        position: absolute;
+        bottom: 0%;
+        right: 167px;
+        color: gray;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #terms{
+        position: absolute;
+        bottom: 0%;
+        right: 100px;
+        color: gray;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #sett{
+        position: absolute;
+        bottom: 0%;
+        right: 25px;
+        color: gray;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+</head>
+<body>
+  <div class="divbase">
+    <div class="divup">
+        <button class="signin"><p class="signintext">Sign in</p></button>
+        <button class="dots"></button>
+        <a class="gmail" href="https://www.gmail.com">Gmail</a>
+        <a class="images" href="https://www.gmail.com">Images</a>
+    </div>
+  <div class="divgoogle"><img class="googleimage" src="assets/google.png"></div>
+  <div class="divinput">
+    <div class="divinputbig">
+        <button class="search">
+            <a href="https://www.google.com/"></a>
+        </button>
+            <input class="input" type="text">
+        <button class="michrophone"></button>
+    </div>
+</div>
+<div class="divgooglebutton">
+    <a id="gs">Google Search</a>
+    <a id="ifl">I'm Feeling Lucky</a>
+</div>
+<div class="divdown">
+    <a  id="about">About</a>
+    <a  id="adv">Advertising</a>
+    <a  id="bus">Business</a>
+    <a  id="hsw">How Search works</a>
+    <a  id="privacy">Privacy</a>
+    <a  id="terms">Terms</a>
+    <a  id="sett">Settings</a>
+    </div>
+</div>
+</body>
+</html>
