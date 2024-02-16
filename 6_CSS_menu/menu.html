@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <link type="text/css"  rel="stylesheet" href="menu.css">
+    </head>
+    <body>
+
+        <ul class="menu">
+            <li id="w3s"><a  href="#"><img id="icon" src="W3Schools_logo.png"></a></li>
+            <li id="li1"><a href="#" class="rightli" id="r1">Tutorials▼</a>
+                <ul id="submenu">
+                    <li><a href="#">HTML&CSS</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">Data Analytics</a></li>
+                    <li><a href="#">Web building</a></li>
+                </ul>
+            </li>
+            <li id="li2"><a class="rightli" id="r2" href="#">Exercises▼</a>
+                <ul id="submenu">
+                    <li><a href="#">HTML&CSS Exercises</a></li>
+                    <li><a href="#">Javascript Exercises</a></li>
+                    <li><a href="#">Backend Exercises</a></li>
+                    <li><a href="#">Data Analytics Exercises</a></li>
+                    <li><a href="#">Web building Exercises</a></li>
+                </ul>
+            </li>
+            <li id="li3"><a class="rightli" id="r3" href="#">Certificates▼</a>
+                <ul id="submenu">
+                    <li><a href="#">HTML&CSS Certificates</a></li>
+                    <li><a href="#">Javascript Certificates</a></li>
+                    <li><a href="#">Backend Certificates</a></li>
+                    <li><a href="#">Data Analytics Certificates</a></li>
+                    <li><a href="#">Web building Certificates</a></li>
+                </ul>
+            </li>
+            <li id="li4"><a class="rightli" id="r4" href="#">Services▼</a>
+                <ul id="submenu">
+                    <li><a href="#">Free Tutorials</a></li>
+                    <li><a href="#">Where to start</a></li>
+                    <li><a href="#">Refrences</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="#">My learning</a></li>
+                </ul>
+            </li>
+            <li id="li5"><div id="searchdiv"><input id="searchinput" type="text" placeholder="Search..."> <button id="but"></button></div></li>
+            <li id="darkli"><button id="dark"><img id="darkimg" src="dark.png"></button></li>
+            
+            <li id="liadiv1"><a href="#" class="libg"><img src="portfolio.png">Jobs</a></li>
+            <li id="liadiv2"><a href="#" class="libg"><img src="code.png">Spaces</a></li>
+            <li id="liadiv3"><a href="#" class="libg"><img src="shopping-cart.png">Get Certified</a></li>
+            <li id="liadiv4"><button id="signup"><div>Sign Up</div></button><button id="login"><div>Log in</div></button> </li>
+
+        </ul>
+
+    </body>
+
+</html>
+
+<script>
+    document.querySelector('#r1').addEventListener('mouseenter', function() {
+        this.textContent = "Tutorials▲";
+    });
+
+    document.querySelector('#r1').addEventListener('mouseleave', function() {
+        this.textContent = "Tutorials▼";
+    });
+
+    document.querySelector('#r2').addEventListener('mouseenter', function() {
+        this.textContent = "Exercises▲";
+    });
+
+    document.querySelector('#r2').addEventListener('mouseleave', function() {
+        this.textContent = "Exercises▼";
+    });
+
+    document.querySelector('#r3').addEventListener('mouseenter', function() {
+        this.textContent = "Certificates▲";
+    });
+
+    document.querySelector('#r3').addEventListener('mouseleave', function() {
+        this.textContent = "Certificates▼";
+    });
+
+    document.querySelector('#r4').addEventListener('mouseenter', function() {
+        this.textContent = "Services▲";
+    });
+
+    document.querySelector('#r4').addEventListener('mouseleave', function() {
+        this.textContent = "Services▼";
+    });
+</script>
